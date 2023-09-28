@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Flex</title>
+    <style>
+        .Container {
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .Box {
+            text-align: center;
+            line-height: 80px;
+            width:80px;
+            font-size:20px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            
+        }
+
+        @media screen and (max-width: 480px) {
+            .Container {
+                background-color: yellow;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Box">Box1</div>
+        <div class="Box">Box 2</div>
+        <div class="Box">Box 3</div>
+        <div class="Box">Box 4</div>
+        <div class="Box">Box 5</div>
+        <div class="Box">Box 6</div>
+        <div class="Box">Box 7</div>
+        <div class="Box">Box 8</div>
+    </div>
+</body>
+</html>
